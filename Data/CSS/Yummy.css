@@ -1,0 +1,171 @@
+body{
+    background-color: #0D0D0D;
+    color: white;
+}
+
+                               /* side bar */
+#sideMenu{
+    background-color: #0D0D0D;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+   z-index: 999;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+aside li{
+  position: relative;
+  top: 1000px;
+  cursor: pointer;
+}
+
+.sideMenuContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.whiteSide{
+    background-color: white;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whiteSide img{
+    width: 80%;
+}
+
+.fa-xmark , .fa-bars{
+    cursor: pointer;
+}
+
+.fa-xmark{
+    display: none;
+}
+
+.loader {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+  }
+  
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+  
+.LoadingScreen{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgb(85, 81, 81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+body{
+    overflow: hidden;
+}
+
+
+
+/* --------------------------- search*/
+.text-white{
+    opacity:1 !important;
+    color: white;
+    
+}
+
+.mealLayer{
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffffa4;
+  color: #0D0D0D;
+ 
+  transition: 0.5s;
+}
+
+
+#mealCard:hover .mealLayer{
+top: 0;
+}
+
+#searchinput::-webkit-input-placeholder{
+  color: white !important;
+  opacity: 0.5 !important;
+}
+
+.containerbox i{
+  font-size: 80px;
+}
+
+
+.cursor-pointer{
+  cursor: pointer;
+}

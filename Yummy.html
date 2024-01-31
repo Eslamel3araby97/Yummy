@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./Data/CSS/all.min.css">
+    <link rel="stylesheet" href="./Data/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./Data/CSS/Yummy.css">
+</head>
+
+<body>
+
+  
+    <aside id="sideMenu">
+        <div class="sideMenuContent h-100 p-4">
+
+            <ul class="text-white ps-0" >
+                
+                <li class="py-2 1 fs-5 " onclick="viewSearchBox();closeSidebar()" >Search <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></li>
+                <li class="py-2 2"onclick="getCatagory() ;closeSidebar() ">Catagories</li>
+                <li class="py-2 3" onclick="getAreas() ;closeSidebar()">Area</li>
+                <li class="py-2 4" onclick="getIngredients() ;closeSidebar()">Ingredients</li>
+                <li class="py-2 5" onclick="Contactus() ;closeSidebar()">Contact Us</li>
+            </ul>
+    
+            <div class="sidebarIcons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+        
+        <div class="whiteSide py-4">
+
+                <img src="./Imgs/logo.png" alt="">
+                <div class="openClose">
+                    <i class="fa-solid fa-xmark fs-2 text-dark "></i>
+                    <i class="fa-solid fa-bars fs-2 text-dark"></i>
+                </div>
+                
+                <div class="logoIcons">
+                    <i class="fa-solid fa-share-nodes text-dark"></i>
+                    <i class="fa-solid fa-globe text-dark"></i>
+                </div>
+            
+            
+         </div>
+     
+    </aside>
+
+    <div class="LoadingScreen  ">
+        <span class="loader"></span>
+    </div>
+
+   
+
+      
+     <div class="container mx-auto p-3   m-3 ">
+        <div class="row" id="searchbox">
+            
+        </div>
+    </div>
+
+<div class="container">
+      <div class="row p-3  g-4 " id="mealslist">
+        <div id="ContactContainer" class="container vh-100 d-flex justify-content-center align-items-center w-75 " >
+            <div class="row g-4 ">
+                
+              
+            
+            </div>
+         </div>
+            </div>
+      </div> 
+     
+
+
+    <script src="./Data/JS/jquery-3.7.1.min.js"></script>
+<script src="./Data/JS/Yummy.js"></script>
+<script src="./Data/JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
